@@ -1,0 +1,107 @@
+[
+  {
+    "id": "q01",
+    "category": "narrative-fact",
+    "question": "What were GPO's total operating revenues in FY 2018?",
+    "expected_answer": "$874.5 million (874,466 thousand), essentially flat vs. $874.3 million in FY 2017.",
+    "expected_pages": [6, 25, 26, 43, 59]
+  },
+  {
+    "id": "q02",
+    "category": "narrative-fact",
+    "question": "How many passports did GPO produce in FY 2018?",
+    "expected_answer": "Approximately 16 million U.S. passports for the State Department.",
+    "expected_pages": [6, 18]
+  },
+  {
+    "id": "q03",
+    "category": "financial-comparison",
+    "question": "What was GPO's net income in FY 2018 and how does it compare to FY 2017?",
+    "expected_answer": "Net income was $52.6 million ($52,624 thousand) in FY 2018 vs. $58.9 million ($58,876 thousand) in FY 2017. Excluding the passport capital projects reserve and workers' compensation adjustment, it was $20.4 million vs. $38.3 million.",
+    "expected_pages": [26, 59]
+  },
+  {
+    "id": "q04",
+    "category": "narrative-fact",
+    "question": "How many employees did GPO have at the end of FY 2018?",
+    "expected_answer": "1,737 employees as of September 30, 2018.",
+    "expected_pages": [7, 12, 14]
+  },
+  {
+    "id": "q05",
+    "category": "narrative-list",
+    "question": "What are the goals of GPO's strategic plan?",
+    "expected_answer": "Five goals: exceeding stakeholders' expectations; enhancing access to Federal Government information; strengthening GPO's position as the government-wide authority on publishing; promoting collaboration and innovation within government; and engaging employees and enhancing internal operations.",
+    "expected_pages": [9]
+  },
+  {
+    "id": "q06",
+    "category": "financial-table",
+    "question": "What were GPO's total assets as of September 30, 2018?",
+    "expected_answer": "$1,018,063 thousand (about $1.02 billion), up from $945,623 thousand in 2017.",
+    "expected_pages": [27, 58]
+  },
+  {
+    "id": "q07",
+    "category": "financial-table",
+    "question": "What was GPO's largest operating expense category in FY 2018 and how much was it?",
+    "expected_answer": "Printing and reproduction, $341,474 thousand (about $341.5 million).",
+    "expected_pages": [59]
+  },
+  {
+    "id": "q08",
+    "category": "financial-table",
+    "question": "Who was GPO's largest customer in FY 2018 and what share of billings did it represent?",
+    "expected_answer": "The U.S. Department of State, with $270,596 thousand in billings, 33.3% of the total.",
+    "expected_pages": [81]
+  },
+  {
+    "id": "q09",
+    "category": "narrative-fact",
+    "question": "How many libraries participate in the Federal Depository Library Program?",
+    "expected_answer": "1,133 Federal, academic, public, law, and other libraries nationwide.",
+    "expected_pages": [8, 15, 19, 39]
+  },
+  {
+    "id": "q10",
+    "category": "narrative-fact",
+    "question": "When was FDsys scheduled to be retired, and what replaced it?",
+    "expected_answer": "December 2018; it was replaced by govinfo.",
+    "expected_pages": [4, 8, 10, 22, 39]
+  },
+  {
+    "id": "q11",
+    "category": "narrative-fact",
+    "question": "Who audited GPO's FY 2018 financial statements and what opinion was issued?",
+    "expected_answer": "KPMG LLP, under contract with GPO's Office of Inspector General; it issued an unmodified (clean) opinion, the 22nd consecutive year.",
+    "expected_pages": [6, 25, 26, 52, 54]
+  },
+  {
+    "id": "q12",
+    "category": "financial-table",
+    "question": "How much did GPO's fund balance with Treasury change during FY 2018?",
+    "expected_answer": "It increased by $58.9 million, from $585.9 million (585,883 thousand) to $644.8 million (644,807 thousand).",
+    "expected_pages": [26, 40, 58, 69]
+  },
+  {
+    "id": "q13",
+    "category": "narrative-fact",
+    "question": "Who signed the letter transmitting the annual report to Congress?",
+    "expected_answer": "John W. Crawford, Acting Deputy Director, on April 25, 2019.",
+    "expected_pages": [3]
+  },
+  {
+    "id": "q14",
+    "category": "out-of-scope",
+    "question": "What was GPO's total revenue in FY 2022?",
+    "expected_answer": "NOT_FOUND - the report covers FY 2018 (with FY 2017 comparisons) only.",
+    "expected_pages": []
+  },
+  {
+    "id": "q15",
+    "category": "out-of-scope",
+    "question": "What is the population of France?",
+    "expected_answer": "NOT_FOUND - unrelated to the report.",
+    "expected_pages": []
+  }
+]

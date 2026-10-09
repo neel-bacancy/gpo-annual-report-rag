@@ -1,0 +1,313 @@
+.document-flow {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.document-flow h2 {
+  font-size: 28px;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* Phases */
+.phase {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.phase-icon {
+  font-size: 32px;
+}
+
+.phase-header h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #1a1a1a;
+}
+
+/* Flow Diagram */
+.flow-diagram {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+  .flow-diagram {
+    flex-direction: column;
+  }
+}
+
+.flow-step {
+  flex: 1;
+  min-width: 220px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f8 100%);
+  border: 2px solid #e0e6f2;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.flow-step:hover {
+  border-color: #4a90e2;
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.15);
+  transform: translateY(-4px);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.step-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.flow-step p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.example {
+  background: white;
+  border-left: 3px solid #4a90e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #4a90e2;
+  font-family: 'Monaco', 'Courier New', monospace;
+  margin-top: 4px;
+}
+
+/* Flow Arrows */
+.flow-arrow {
+  font-size: 28px;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .flow-arrow {
+    transform: rotate(90deg);
+    padding: 8px 0;
+  }
+}
+
+/* Benefits */
+.benefits {
+  background: linear-gradient(135deg, #f0f9ff 0%, #f0f3f8 100%);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 40px 0;
+}
+
+.benefits h3 {
+  font-size: 22px;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.1);
+  transform: translateY(-4px);
+}
+
+.benefit-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.benefit-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.benefit-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Technical Details */
+.tech-details {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 0;
+  margin: 32px 0;
+  cursor: pointer;
+}
+
+.tech-details summary {
+  padding: 16px 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 15px;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tech-details summary:hover {
+  background: #f0f0f0;
+}
+
+.details-content {
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  background: white;
+}
+
+.details-content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a90e2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 16px 0 8px 0;
+}
+
+.details-content h4:first-child {
+  margin-top: 0;
+}
+
+.details-content p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.details-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .document-flow {
+    padding: 0 12px;
+  }
+
+  .document-flow h2 {
+    font-size: 24px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+
+  .phase {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .phase-header {
+    margin-bottom: 20px;
+  }
+
+  .phase-icon {
+    font-size: 28px;
+  }
+
+  .phase-header h3 {
+    font-size: 18px;
+  }
+
+  .flow-step {
+    min-width: 180px;
+    padding: 16px;
+  }
+
+  .step-title {
+    font-size: 14px;
+  }
+
+  .step-number {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .flow-step p {
+    font-size: 12px;
+  }
+
+  .example {
+    font-size: 11px;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .benefits {
+    padding: 20px;
+  }
+
+  .benefits h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}

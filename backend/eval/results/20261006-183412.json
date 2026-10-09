@@ -1,0 +1,1142 @@
+{
+  "summary": {
+    "questions": 15,
+    "hit_at_k": "100%",
+    "mrr": 0.962,
+    "citation_accuracy": "100%",
+    "refusal_accuracy": "100%",
+    "avg_retrieval_ms": 561,
+    "avg_generation_ms": 3448,
+    "correct": "93%",
+    "correct_or_partial": "100%",
+    "faithful": "100%"
+  },
+  "config": {
+    "llm_model": "gemini-3.5-flash",
+    "embedding_model": "gemini-embedding-001",
+    "embedding_dim": 768,
+    "chunk_max_tokens": 500,
+    "chunk_overlap_tokens": 75,
+    "top_k": 5,
+    "min_similarity": 0.6,
+    "llm_temperature": 0.1
+  },
+  "results": [
+    {
+      "id": "q01",
+      "category": "narrative-fact",
+      "question": "What were GPO's total operating revenues in FY 2018?",
+      "expected_answer": "$874.5 million (874,466 thousand), essentially flat vs. $874.3 million in FY 2017.",
+      "expected_pages": [
+        6,
+        25,
+        26,
+        43,
+        59
+      ],
+      "answer": "In FY 2018, GPO's total operating revenues were **$874,466 thousand** (or approximately **$874.5 million**) [S2][S3][S4].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            43,
+            44
+          ],
+          "section": "Operating Revenues / Operating Expenses / Changes in Retained Earnings",
+          "similarity": 0.811
+        },
+        {
+          "pages": [
+            59,
+            59
+          ],
+          "section": "Consolidated Statements of Revenues, Expenses, > and Changes in Retained Earnings > For the Fiscal Years Ended September 30, 2018 and 2017 > (Dollars in Thousands) / OPERATING REVENUES / OPERATING EXPENSES",
+          "similarity": 0.8016
+        },
+        {
+          "pages": [
+            25,
+            25
+          ],
+          "section": "FY 2018 Financial Results",
+          "similarity": 0.7996
+        },
+        {
+          "pages": [
+            26,
+            26
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.7972
+        },
+        {
+          "pages": [
+            26,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.7932
+        }
+      ],
+      "cited_pages": [
+        [
+          59,
+          59
+        ],
+        [
+          25,
+          25
+        ],
+        [
+          26,
+          26
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 643,
+      "generation_ms": 3347,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer correctly identifies GPO's total operating revenues in FY 2018 as $874,466 thousand (or approximately $874.5 million), which matches the reference answer. All claims are fully supported by the provided sources (specifically S2, S3, and S4)."
+    },
+    {
+      "id": "q02",
+      "category": "narrative-fact",
+      "question": "How many passports did GPO produce in FY 2018?",
+      "expected_answer": "Approximately 16 million U.S. passports for the State Department.",
+      "expected_pages": [
+        6,
+        18
+      ],
+      "answer": "In FY 2018, GPO produced exactly 15,901,600 passports (approximately 16 million) [S1][S2][S5].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            18,
+            18
+          ],
+          "section": "Security and Intelligent Documents",
+          "similarity": 0.8051
+        },
+        {
+          "pages": [
+            5,
+            6
+          ],
+          "section": "A Message from the Acting Deputy Director",
+          "similarity": 0.8048
+        },
+        {
+          "pages": [
+            46,
+            48
+          ],
+          "section": "Passport and Smartcard Metrics / Passport Books Produced / Smartcards Produced",
+          "similarity": 0.801
+        },
+        {
+          "pages": [
+            25,
+            25
+          ],
+          "section": "FY 2018 Financial Results",
+          "similarity": 0.7934
+        },
+        {
+          "pages": [
+            14,
+            15
+          ],
+          "section": "GPO By the Numbers FY 2018",
+          "similarity": 0.7912
+        }
+      ],
+      "cited_pages": [
+        [
+          18,
+          18
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          14,
+          15
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 551,
+      "generation_ms": 3727,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer is correct and faithful. The reference answer states 'Approximately 16 million U.S. passports', and the system answer provides the exact number '15,901,600' (which is approximately 16 million) as supported by source [S5], which lists 'Passports produced: 15,901,600'."
+    },
+    {
+      "id": "q03",
+      "category": "financial-comparison",
+      "question": "What was GPO's net income in FY 2018 and how does it compare to FY 2017?",
+      "expected_answer": "Net income was $52.6 million ($52,624 thousand) in FY 2018 vs. $58.9 million ($58,876 thousand) in FY 2017. Excluding the passport capital projects reserve and workers' compensation adjustment, it was $20.4 million vs. $38.3 million.",
+      "expected_pages": [
+        26,
+        59
+      ],
+      "answer": "In FY 2018, GPO's net income was $52.6 million (or $52,624 thousand), compared with a net income of $58.9 million (or $58,876 thousand) in FY 2017 [S1].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            26,
+            26
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.8217
+        },
+        {
+          "pages": [
+            26,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.8146
+        },
+        {
+          "pages": [
+            43,
+            44
+          ],
+          "section": "Operating Revenues / Operating Expenses / Changes in Retained Earnings",
+          "similarity": 0.8116
+        },
+        {
+          "pages": [
+            27,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.8008
+        },
+        {
+          "pages": [
+            25,
+            25
+          ],
+          "section": "FY 2018 Financial Results",
+          "similarity": 0.7935
+        }
+      ],
+      "cited_pages": [
+        [
+          26,
+          26
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 573,
+      "generation_ms": 2294,
+      "model": "gemini-3.5-flash",
+      "correctness": "partial",
+      "faithful": true,
+      "judge_reason": "The system answer correctly identifies the net income for FY 2018 and FY 2017 in both millions and thousands, which is fully supported by the sources. However, it is graded as partial because it omits the second part of the reference answer regarding the net income excluding the passport capital projects reserve and workers' compensation adjustment."
+    },
+    {
+      "id": "q04",
+      "category": "narrative-fact",
+      "question": "How many employees did GPO have at the end of FY 2018?",
+      "expected_answer": "1,737 employees as of September 30, 2018.",
+      "expected_pages": [
+        7,
+        12,
+        14
+      ],
+      "answer": "At the end of FY 2018, GPO had 1,737 employees [S1][S2][S3][S4].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            14,
+            15
+          ],
+          "section": "GPO By the Numbers FY 2018",
+          "similarity": 0.7951
+        },
+        {
+          "pages": [
+            6,
+            8
+          ],
+          "section": "A Message from the Acting Deputy Director",
+          "similarity": 0.7826
+        },
+        {
+          "pages": [
+            12,
+            13
+          ],
+          "section": "GPO Employment FY 1980–2018 (at September 30) / Highlights of FY 2018 Congressional Work",
+          "similarity": 0.7791
+        },
+        {
+          "pages": [
+            12,
+            12
+          ],
+          "section": "Congressional Publishing Appropriation",
+          "similarity": 0.776
+        },
+        {
+          "pages": [
+            27,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.7588
+        }
+      ],
+      "cited_pages": [
+        [
+          14,
+          15
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          12
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 544,
+      "generation_ms": 2826,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer correctly states that GPO had 1,737 employees at the end of FY 2018, which matches the reference answer. This is fully supported by multiple sources, including [S4] which explicitly states, 'At the end of FY 2018, we had 1,737 employees on board'."
+    },
+    {
+      "id": "q05",
+      "category": "narrative-list",
+      "question": "What are the goals of GPO's strategic plan?",
+      "expected_answer": "Five goals: exceeding stakeholders' expectations; enhancing access to Federal Government information; strengthening GPO's position as the government-wide authority on publishing; promoting collaboration and innovation within government; and engaging employees and enhancing internal operations.",
+      "expected_pages": [
+        9
+      ],
+      "answer": "Based on the GPO 2018 Annual Report, the strategic plan is built around five goals:\n\n1. Exceeding stakeholders’ expectations [S1].\n2. Enhancing access to Federal Government information [S1].\n3. Strengthening GPO's position as the government-wide authority on publishing [S1].\n4. Promoting collaboration and innovation within government [S1].\n5. Engaging employees and enhancing internal operations [S1].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            9,
+            9
+          ],
+          "section": "Strategic Plan",
+          "similarity": 0.7746
+        },
+        {
+          "pages": [
+            8,
+            9
+          ],
+          "section": "Strategic Vision",
+          "similarity": 0.7608
+        },
+        {
+          "pages": [
+            40,
+            40
+          ],
+          "section": "Financial Position and Results for Fiscal Year 2018",
+          "similarity": 0.7004
+        },
+        {
+          "pages": [
+            6,
+            8
+          ],
+          "section": "A Message from the Acting Deputy Director",
+          "similarity": 0.6995
+        },
+        {
+          "pages": [
+            49,
+            49
+          ],
+          "section": "Fiscal Year 2019 Financial Projections",
+          "similarity": 0.6874
+        }
+      ],
+      "cited_pages": [
+        [
+          9,
+          9
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 566,
+      "generation_ms": 2211,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer perfectly matches the reference answer, listing all five goals of GPO's strategic plan. Every claim is fully supported by the provided source [S1]."
+    },
+    {
+      "id": "q06",
+      "category": "financial-table",
+      "question": "What were GPO's total assets as of September 30, 2018?",
+      "expected_answer": "$1,018,063 thousand (about $1.02 billion), up from $945,623 thousand in 2017.",
+      "expected_pages": [
+        27,
+        58
+      ],
+      "answer": "As of September 30, 2018, GPO's total assets were $1,018,063 thousand (or approximately $1 billion) [S1][S2][S3].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            57,
+            58
+          ],
+          "section": "Consolidated Balance Sheets > As of September 30, 2018 and 2017 > (Dollars in Thousands) / ASSETS / LIABILITIES AND NET POSITION",
+          "similarity": 0.8039
+        },
+        {
+          "pages": [
+            26,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.784
+        },
+        {
+          "pages": [
+            27,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.7839
+        },
+        {
+          "pages": [
+            40,
+            40
+          ],
+          "section": "Financial Position and Results for Fiscal Year 2018",
+          "similarity": 0.7784
+        },
+        {
+          "pages": [
+            40,
+            41
+          ],
+          "section": "Accounts Receivable, Net / Inventory, Net / General Property Plant, and Equipment, Net",
+          "similarity": 0.7631
+        }
+      ],
+      "cited_pages": [
+        [
+          57,
+          58
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          27
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 530,
+      "generation_ms": 2451,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer correctly identifies GPO's total assets as of September 30, 2018, as $1,018,063 thousand. It approximates this as $1 billion, which is directly supported by the text in source [S2] stating 'Total assets grew by $72.4 million to $1 billion in FY 2018'."
+    },
+    {
+      "id": "q07",
+      "category": "financial-table",
+      "question": "What was GPO's largest operating expense category in FY 2018 and how much was it?",
+      "expected_answer": "Printing and reproduction, $341,474 thousand (about $341.5 million).",
+      "expected_pages": [
+        59
+      ],
+      "answer": "GPO's largest operating expense category in FY 2018 was printing and reproduction [S2][S4]. The cost for this category was $341,474 thousand (or $341.5 million), which accounted for about 41.4% of total expenses [S2][S4].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            43,
+            44
+          ],
+          "section": "Operating Revenues / Operating Expenses / Changes in Retained Earnings",
+          "similarity": 0.8005
+        },
+        {
+          "pages": [
+            59,
+            59
+          ],
+          "section": "Consolidated Statements of Revenues, Expenses, > and Changes in Retained Earnings > For the Fiscal Years Ended September 30, 2018 and 2017 > (Dollars in Thousands) / OPERATING REVENUES / OPERATING EXPENSES",
+          "similarity": 0.795
+        },
+        {
+          "pages": [
+            66,
+            67
+          ],
+          "section": "L.  Expense Recognition",
+          "similarity": 0.784
+        },
+        {
+          "pages": [
+            25,
+            25
+          ],
+          "section": "FY 2018 Financial Results",
+          "similarity": 0.7829
+        },
+        {
+          "pages": [
+            59,
+            60
+          ],
+          "section": "OTHER EXPENSES / Consolidated Statements of Cash Flows > For the Fiscal Years Ended September 30, 2018 and 2017 > (Dollars in Thousands) / CASH FLOWS FROM OPERATING ACTIVITIES",
+          "similarity": 0.768
+        }
+      ],
+      "cited_pages": [
+        [
+          59,
+          59
+        ],
+        [
+          25,
+          25
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 2,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 547,
+      "generation_ms": 4117,
+      "model": "gemini-3.5-flash-lite",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer perfectly matches the reference answer, providing the correct category (printing and reproduction) and the correct amount ($341,474 thousand or $341.5 million). All details in the system answer are fully supported by the provided sources (S2 and S4)."
+    },
+    {
+      "id": "q08",
+      "category": "financial-table",
+      "question": "Who was GPO's largest customer in FY 2018 and what share of billings did it represent?",
+      "expected_answer": "The U.S. Department of State, with $270,596 thousand in billings, 33.3% of the total.",
+      "expected_pages": [
+        81
+      ],
+      "answer": "GPO's largest customer in FY 2018 was the U.S. Department of State, which represented 33.3% of total billings ($270,596 thousand) [S1].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            81,
+            81
+          ],
+          "section": "15.  Major Customers",
+          "similarity": 0.8367
+        },
+        {
+          "pages": [
+            14,
+            15
+          ],
+          "section": "GPO By the Numbers FY 2018",
+          "similarity": 0.7553
+        },
+        {
+          "pages": [
+            16,
+            17
+          ],
+          "section": "Highlights of FY 2018 Agency Operations",
+          "similarity": 0.7503
+        },
+        {
+          "pages": [
+            36,
+            37
+          ],
+          "section": "Programs and Operations / Funding",
+          "similarity": 0.7447
+        },
+        {
+          "pages": [
+            38,
+            39
+          ],
+          "section": "Programs and Operations Overview",
+          "similarity": 0.7443
+        }
+      ],
+      "cited_pages": [
+        [
+          81,
+          81
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 533,
+      "generation_ms": 3934,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer correctly identifies the U.S. Department of State as GPO's largest customer in FY 2018, representing 33.3% of total billings ($270,596 thousand). This matches the reference answer perfectly and is fully supported by Source [S1]."
+    },
+    {
+      "id": "q09",
+      "category": "narrative-fact",
+      "question": "How many libraries participate in the Federal Depository Library Program?",
+      "expected_answer": "1,133 Federal, academic, public, law, and other libraries nationwide.",
+      "expected_pages": [
+        8,
+        15,
+        19,
+        39
+      ],
+      "answer": "There are 1,133 libraries that participate in the Federal Depository Library Program [S1][S5].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            19,
+            20
+          ],
+          "section": "Federal Depository Library Program",
+          "similarity": 0.7532
+        },
+        {
+          "pages": [
+            20,
+            21
+          ],
+          "section": "Federal Depository Library Program",
+          "similarity": 0.7182
+        },
+        {
+          "pages": [
+            21,
+            21
+          ],
+          "section": "Federal Depository Library Program",
+          "similarity": 0.7115
+        },
+        {
+          "pages": [
+            5,
+            5
+          ],
+          "section": "A Message from the Acting Deputy Director",
+          "similarity": 0.705
+        },
+        {
+          "pages": [
+            39,
+            39
+          ],
+          "section": "Programs and Operations Overview",
+          "similarity": 0.701
+        }
+      ],
+      "cited_pages": [
+        [
+          19,
+          20
+        ],
+        [
+          39,
+          39
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 550,
+      "generation_ms": 2597,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer correctly states that there are 1,133 libraries participating in the Federal Depository Library Program, which matches the reference answer. This fact is fully supported by the provided sources [S1] and [S5]."
+    },
+    {
+      "id": "q10",
+      "category": "narrative-fact",
+      "question": "When was FDsys scheduled to be retired, and what replaced it?",
+      "expected_answer": "December 2018; it was replaced by govinfo.",
+      "expected_pages": [
+        4,
+        8,
+        10,
+        22,
+        39
+      ],
+      "answer": "FDsys was scheduled to be completely retired in December 2018 and was replaced by *govinfo* [S1][S2][S3][S5].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            21,
+            22
+          ],
+          "section": "Federal Depository Library Program",
+          "similarity": 0.6577
+        },
+        {
+          "pages": [
+            9,
+            10
+          ],
+          "section": "Technology Transformation",
+          "similarity": 0.6364
+        },
+        {
+          "pages": [
+            39,
+            39
+          ],
+          "section": "Programs and Operations Overview",
+          "similarity": 0.6359
+        },
+        {
+          "pages": [
+            45,
+            46
+          ],
+          "section": "On-Time Delivery and Quality Acceptance of Procured Printing / On-Time Delivery and Quality Acceptance of Procured > Printing / FDsys Search and Retrieval Metrics",
+          "similarity": 0.6346
+        },
+        {
+          "pages": [
+            8,
+            8
+          ],
+          "section": "A Message from the Acting Deputy Director",
+          "similarity": 0.6315
+        }
+      ],
+      "cited_pages": [
+        [
+          21,
+          22
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          39,
+          39
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 590,
+      "generation_ms": 3970,
+      "model": "gemini-3.5-flash",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer correctly identifies that FDsys was scheduled to be retired in December 2018 and was replaced by govinfo, matching the reference answer. All claims are fully supported by the provided sources (e.g., S1, S2, S3, and S5)."
+    },
+    {
+      "id": "q11",
+      "category": "narrative-fact",
+      "question": "Who audited GPO's FY 2018 financial statements and what opinion was issued?",
+      "expected_answer": "KPMG LLP, under contract with GPO's Office of Inspector General; it issued an unmodified (clean) opinion, the 22nd consecutive year.",
+      "expected_pages": [
+        6,
+        25,
+        26,
+        52,
+        54
+      ],
+      "answer": "GPO's FY 2018 financial statements were audited by the independent certified public accounting firm KPMG LLP (KPMG) [S3]. KPMG issued an unmodified (clean) opinion, stating that the consolidated financial statements present fairly, in all material respects, GPO's financial position, results of operations, and cash flows in accordance with U.S. generally accepted accounting principles [S1][S3][S5].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            54,
+            55
+          ],
+          "section": "SECTION III / Independent Auditors’ Report / Report on the Financial Statements",
+          "similarity": 0.8033
+        },
+        {
+          "pages": [
+            53,
+            54
+          ],
+          "section": "SECTION III / Independent Auditors’ Report / Report on the Financial Statements",
+          "similarity": 0.7951
+        },
+        {
+          "pages": [
+            50,
+            52
+          ],
+          "section": "U.S. GOVERNMENT PUBLISHING OFFICE / Date / From",
+          "similarity": 0.7917
+        },
+        {
+          "pages": [
+            55,
+            55
+          ],
+          "section": "Other Reporting Required by Government Auditing Standards",
+          "similarity": 0.7866
+        },
+        {
+          "pages": [
+            26,
+            26
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.7855
+        }
+      ],
+      "cited_pages": [
+        [
+          50,
+          52
+        ],
+        [
+          54,
+          55
+        ],
+        [
+          26,
+          26
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 588,
+      "generation_ms": 4302,
+      "model": "gemini-3.5-flash-lite",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system correctly identifies that KPMG LLP audited the financial statements and issued an unmodified (clean) opinion, matching the reference answer and fully supported by the provided sources."
+    },
+    {
+      "id": "q12",
+      "category": "financial-table",
+      "question": "How much did GPO's fund balance with Treasury change during FY 2018?",
+      "expected_answer": "It increased by $58.9 million, from $585.9 million (585,883 thousand) to $644.8 million (644,807 thousand).",
+      "expected_pages": [
+        26,
+        40,
+        58,
+        69
+      ],
+      "answer": "GPO's fund balance with Treasury increased by $58.9 million (or $58,924 thousand), going from $585.9 million ($585,883 thousand) at the end of FY 2017 to $644.8 million ($644,807 thousand) at the end of FY 2018 [S1][S3][S4].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            26,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.8423
+        },
+        {
+          "pages": [
+            27,
+            27
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.8052
+        },
+        {
+          "pages": [
+            68,
+            69
+          ],
+          "section": "P.  Tax Status / 2.  Fund Balance with Treasury",
+          "similarity": 0.8048
+        },
+        {
+          "pages": [
+            40,
+            40
+          ],
+          "section": "Selected Balance Sheet Accounts and Other Statistics > Cash / Accounts Receivable, Net",
+          "similarity": 0.7983
+        },
+        {
+          "pages": [
+            57,
+            58
+          ],
+          "section": "Consolidated Balance Sheets > As of September 30, 2018 and 2017 > (Dollars in Thousands) / ASSETS / LIABILITIES AND NET POSITION",
+          "similarity": 0.7975
+        }
+      ],
+      "cited_pages": [
+        [
+          26,
+          27
+        ],
+        [
+          68,
+          69
+        ],
+        [
+          40,
+          40
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 590,
+      "generation_ms": 3829,
+      "model": "gemini-3.5-flash-lite",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer accurately states the change in GPO's fund balance with Treasury ($58.9 million increase, from $585.9 million to $644.8 million), which matches the reference answer and is fully supported by the provided sources."
+    },
+    {
+      "id": "q13",
+      "category": "narrative-fact",
+      "question": "Who signed the letter transmitting the annual report to Congress?",
+      "expected_answer": "John W. Crawford, Acting Deputy Director, on April 25, 2019.",
+      "expected_pages": [
+        3
+      ],
+      "answer": "John W. Crawford, Acting Deputy Director, signed the letter transmitting the annual report to Congress [S1].",
+      "found": true,
+      "retrieved": [
+        {
+          "pages": [
+            1,
+            3
+          ],
+          "section": "2018 Annual Report",
+          "similarity": 0.7164
+        },
+        {
+          "pages": [
+            50,
+            52
+          ],
+          "section": "U.S. GOVERNMENT PUBLISHING OFFICE / Date / From",
+          "similarity": 0.6646
+        },
+        {
+          "pages": [
+            4,
+            5
+          ],
+          "section": "A Message from the Acting Deputy Director",
+          "similarity": 0.6598
+        },
+        {
+          "pages": [
+            6,
+            8
+          ],
+          "section": "A Message from the Acting Deputy Director",
+          "similarity": 0.6571
+        },
+        {
+          "pages": [
+            61,
+            61
+          ],
+          "section": "Notes to the Financial Statements > September 30, 2018 and 2017 > 1.  Summary of Significant Accounting Policies > A.  Reporting Entity",
+          "similarity": 0.6509
+        }
+      ],
+      "cited_pages": [
+        [
+          1,
+          3
+        ]
+      ],
+      "hit_at_k": true,
+      "rank": 1,
+      "citation_ok": true,
+      "refusal_ok": null,
+      "retrieval_ms": 545,
+      "generation_ms": 6615,
+      "model": "gemini-3.5-flash-lite",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system answer accurately identifies John W. Crawford, Acting Deputy Director, as the person who signed the letter transmitting the annual report to Congress, matching both the reference answer and the source text [S1]."
+    },
+    {
+      "id": "q14",
+      "category": "out-of-scope",
+      "question": "What was GPO's total revenue in FY 2022?",
+      "expected_answer": "NOT_FOUND - the report covers FY 2018 (with FY 2017 comparisons) only.",
+      "expected_pages": [],
+      "answer": "I couldn't find this information in the GPO 2018 Annual Report.",
+      "found": false,
+      "retrieved": [
+        {
+          "pages": [
+            25,
+            25
+          ],
+          "section": "FY 2018 Financial Results",
+          "similarity": 0.756
+        },
+        {
+          "pages": [
+            14,
+            15
+          ],
+          "section": "GPO By the Numbers FY 2018",
+          "similarity": 0.7536
+        },
+        {
+          "pages": [
+            59,
+            59
+          ],
+          "section": "Consolidated Statements of Revenues, Expenses, > and Changes in Retained Earnings > For the Fiscal Years Ended September 30, 2018 and 2017 > (Dollars in Thousands) / OPERATING REVENUES / OPERATING EXPENSES",
+          "similarity": 0.7526
+        },
+        {
+          "pages": [
+            43,
+            44
+          ],
+          "section": "Operating Revenues / Operating Expenses / Changes in Retained Earnings",
+          "similarity": 0.7521
+        },
+        {
+          "pages": [
+            26,
+            26
+          ],
+          "section": "Financial Statements",
+          "similarity": 0.7396
+        }
+      ],
+      "cited_pages": [],
+      "hit_at_k": null,
+      "rank": null,
+      "citation_ok": null,
+      "refusal_ok": true,
+      "retrieval_ms": 530,
+      "generation_ms": 5508,
+      "model": "gemini-3.5-flash-lite",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The system correctly identified that the information for FY 2022 is not in the GPO 2018 Annual Report, matching the reference answer (NOT_FOUND). The system answer is truthful and supported by the sources provided."
+    },
+    {
+      "id": "q15",
+      "category": "out-of-scope",
+      "question": "What is the population of France?",
+      "expected_answer": "NOT_FOUND - unrelated to the report.",
+      "expected_pages": [],
+      "answer": "I couldn't find this information in the GPO 2018 Annual Report.",
+      "found": false,
+      "retrieved": [
+        {
+          "pages": [
+            14,
+            15
+          ],
+          "section": "GPO By the Numbers FY 2018",
+          "similarity": 0.5121
+        },
+        {
+          "pages": [
+            40,
+            40
+          ],
+          "section": "Financial Position and Results for Fiscal Year 2018",
+          "similarity": 0.4898
+        },
+        {
+          "pages": [
+            40,
+            41
+          ],
+          "section": "Accounts Receivable, Net / Inventory, Net / General Property Plant, and Equipment, Net",
+          "similarity": 0.4886
+        },
+        {
+          "pages": [
+            19,
+            19
+          ],
+          "section": "GPO and Open, Transparent Government",
+          "similarity": 0.4861
+        },
+        {
+          "pages": [
+            12,
+            13
+          ],
+          "section": "GPO Employment FY 1980–2018 (at September 30) / Highlights of FY 2018 Congressional Work",
+          "similarity": 0.4849
+        }
+      ],
+      "cited_pages": [],
+      "hit_at_k": null,
+      "rank": null,
+      "citation_ok": null,
+      "refusal_ok": true,
+      "retrieval_ms": 545,
+      "generation_ms": 0,
+      "model": "",
+      "correctness": "correct",
+      "faithful": true,
+      "judge_reason": "The reference answer indicates the information is not found in the report, and the system correctly declined to answer."
+    }
+  ]
+}

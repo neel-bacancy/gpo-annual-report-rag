@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+backend/.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Generated data (rebuild with: python -m scripts.ingest)
+backend/data/chroma/
+backend/data/cache/
+backend/data/chunks.jsonl
+
+# Node / frontend build output (node_modules and dist are also ignored in frontend/.gitignore)
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Editors and IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
